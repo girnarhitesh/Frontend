@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navigation.css';
-import { FaLock, FaBolt } from 'react-icons/fa';
-import { Link } from 'react-router-dom'; // Make sure this is installed
+import { FaLock, FaBolt, FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Navigation() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
         <nav className="navigation">
             <div className="nav-left">
@@ -11,12 +13,12 @@ function Navigation() {
                 <Link to="/" className="logo-text">Cloudvista</Link>
             </div>
 
-            <ul className="nav-center">
-                <li><Link to="/" className="nav-link active">Home</Link></li>
-                <li><Link to="/about" className="nav-link">About</Link></li>
-                <li><Link to="/services" className="nav-link">Services</Link></li>
-                <li><Link to="/contact" className="nav-link">Contact</Link></li>
-            </ul>
+            <div className={`nav-center ${menuOpen ? 'open' : ''}`}>
+                <li><Link to="/" className="nav-link active" onClick={() => setMenuOpen(false)}>Home</Link></li>
+                <li><Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link></li>
+                <li><Link to="/services" className="nav-link" onClick={() => setMenuOpen(false)}>Services</Link></li>
+                <li><Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+            </div>
 
             <div className="nav-right">
                 <Link to="/signup" className="signup">
@@ -26,6 +28,10 @@ function Navigation() {
                 <Link to="/free-trial">
                     <button className="trial-btn">Start free trial</button>
                 </Link>
+
+                <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+                    {menuOpen ? <FaTimes /> : <FaBars />}
+                </div>
             </div>
         </nav>
     );

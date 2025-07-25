@@ -51,7 +51,7 @@ function Hero() {
                         <div className={`hero-image ${isVisible ? 'animate-in' : ''}`}>
                             <div className="dashboard-container">
                                 <div className="lightbulb-icon"><img src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64f86197315ed203922a2313_decoration-01.svg" alt="" /></div>
-                                <img src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64faa464a1cc841036f3444e_vector-01.svg" alt="" />
+                               <div className='Hero-section-img'> <img src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64faa464a1cc841036f3444e_vector-01.svg" alt="" /></div>
                             </div>
                         </div>
                     </Col>

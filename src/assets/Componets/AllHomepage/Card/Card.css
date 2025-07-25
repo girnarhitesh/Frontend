@@ -265,13 +265,6 @@
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .sectionpadding {
-        padding: 60px 20px;
-    }
-
-    .card-heading h1 {
-        font-size: 2.5rem;
-    }
 
     .cards-grid {
         grid-template-columns: 1fr;
@@ -304,14 +297,6 @@
 
 /* Tablet Responsive */
 @media (min-width: 769px) and (max-width: 1024px) {
-    .sectionpadding {
-        padding: 80px 30px;
-    }
-
-    .card-heading h1 {
-        font-size: 3rem;
-    }
-
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -321,5 +306,12 @@
 @media (min-width: 1400px) {
     .cards-grid {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media(max-width:900px){
+    .card-heading h1{
+        font-size: 25px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
     }
 }

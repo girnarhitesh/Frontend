@@ -1,9 +1,9 @@
  .hero-container {
-   height: auto;
+     height: auto;
      position: relative;
      overflow: hidden;
  }
- 
+
 
  .sectionpadding {
      padding: 80px 40px;
@@ -254,7 +254,7 @@
      }
 
      .dashboard-container {
-         height: 400px;
+         height: auto;
          margin-top: 40px;
      }
 
@@ -274,13 +274,12 @@
      }
  }
 
- /* Tablet Responsive */
- @media (min-width: 769px) and (max-width: 1024px) {
-     .hero-title {
-         font-size: 3rem;
+ @media(max-width:900px) {
+     .Hero-section-img img {
+         width: 100%;
      }
-
-     .dashboard-container {
-         max-width: 500px;
+     .lightbulb-icon img{
+        width: 6vh;
+        margin-left: -10vh;
      }
  }
