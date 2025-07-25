@@ -19,7 +19,7 @@ function Hero() {
     return (
         <div className="hero-container">
             <div className="sectionpadding">
-                <Row gutter={[40, 40]} align="middle">
+                <Row className='Hero-row' style={{ display: "flex" }}>
                     <Col lg={12} md={24} sm={24}>
                         <div className={`hero-content ${isVisible ? 'animate-in' : ''}`}>
                             <h1 className="hero-title">
@@ -55,9 +55,9 @@ function Hero() {
                             </div>
                         </div>
                     </Col>
-                </Row>
+                </Row >
             </div>
-        </div>
+        </div >
     );
 }
 

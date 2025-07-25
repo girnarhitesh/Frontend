@@ -1,9 +1,13 @@
 body,
 html {
     width: 100%;
+    background-color: #FFFFFF;
 }
 
 a {
 
     text-decoration: none;
+}
+.ant-row{
+    display: block;
 }

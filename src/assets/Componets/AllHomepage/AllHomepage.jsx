@@ -1,16 +1,16 @@
 import React from 'react'
 import Hero from './Hero/Hero'
-import { Card } from 'antd'
+import Card from './Card/Card'
 
 function AllHomepage() {
   return (
-  <>
-  <div>
-    <Hero/>
-    <Card/>
-  </div>
-  
-  </>
+    <>
+      <div>
+        <Hero />
+        <Card />
+      </div>
+
+    </>
   )
 }
 
