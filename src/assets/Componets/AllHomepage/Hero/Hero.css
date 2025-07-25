@@ -37,7 +37,7 @@
      line-height: 1.7;
      margin-bottom: 40px;
      letter-spacing: 1px;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
  .brand-name {
@@ -153,6 +153,7 @@
      z-index: 10;
      rotate: 20deg;
  }
+
  @keyframes slideInLeft {
      from {
          opacity: 0;
