@@ -1,0 +1,81 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  font-size: 24px;
+  color: #a78bfa; /* Tailwind purple-400 */
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+}
+
+.nav-center {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-center li {
+  cursor: pointer;
+  color: #111;
+  transition: color 0.3s;
+}
+
+.nav-center li:hover {
+  color: #fb923c; /* Tailwind orange-400 */
+}
+
+.nav-center .active {
+  color: #fb923c;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.lock-icon {
+  font-size: 14px;
+  color: #a78bfa;
+}
+
+.trial-btn {
+  background-color: #a78bfa;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.trial-btn:hover {
+  background-color: #8b5cf6;
+}
