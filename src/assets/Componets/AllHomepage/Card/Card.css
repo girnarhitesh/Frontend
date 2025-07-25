@@ -59,16 +59,12 @@
 }
 
 .card-heading h1 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    color: #1a202c;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(26, 32, 44);
     line-height: 1.2;
-    margin: 0;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #1a202c 0%, #4a5568 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    margin-bottom: 24px;
+    letter-spacing: -0.02em
 }
 
 .cards-grid {
