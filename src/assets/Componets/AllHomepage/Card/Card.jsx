@@ -35,6 +35,23 @@ function Card() {
         });
     }, []);
 
+
+    const [visibleSteps, setVisibleSteps] = useState([]);
+
+
+    useEffect(() => {
+        // Header animation
+        setTimeout(() => setIsHeaderVisible(true), 200);
+
+        // Staggered step animations
+        worksData.forEach((_, index) => {
+            setTimeout(() => {
+                setVisibleSteps(prev => [...prev, index]);
+            }, 800 + index * 400);
+        });
+    }, []);
+
+
     const features = [
         "100% Trustworthy and readable",
         "Design is a team sport, collaborate with everyone",
@@ -72,23 +89,33 @@ function Card() {
         },
     ];
 
+
     const worksData = [
         {
-            img: "https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fac0cca5950e98413e59a6_step-01.svg",
             name: "Register",
-            description: "Create your account. No credit card is required."
+            description: "Create your account. No credit card is required.",
+            img: "👤",
+            color: "#8b5cf6",
+            bgGradient: "linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)",
+            step: "01"
         },
         {
-            img: "https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fac0cda5950e98413e5a03_step-02.svg",
             name: "Connect your account",
-            description: "Connect your account effortlessly to unlock a world of possibilities."
+            description: "Connect your account effortlessly to unlock a world of possibilities.",
+            img: "🔗",
+            color: "#f97316",
+            bgGradient: "linear-gradient(135deg, #f97316 0%, #ea580c 100%)",
+            step: "02"
         },
         {
-            img: "https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fac0ccabe05eccc852127f_step-03.svg",
             name: "You are set!",
-            description: "You're all set and ready to go!"
-        },
-    ]
+            description: "You're all set and ready to go!",
+            img: "✓",
+            color: "#ec4899",
+            bgGradient: "linear-gradient(135deg, #ec4899 0%, #db2777 100%)",
+            step: "03"
+        }
+    ];
 
     return (
         <>
@@ -237,39 +264,43 @@ function Card() {
 
                         <Col lg={12} md={24} sm={24}>
                             <div className={`workflow-content ${isVisible ? 'animate-in' : ''}`}>
-                                <div className="visualize-badge">
-                                    <img
-                                        src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fedaf963a9b4d0ee8446fe_dark-sub-icon.svg"
-                                        alt="icon"
-                                        className="badge-icon"
-                                    />
-                                    Visualize
-                                </div>
+                                {/* <div className='header-workflow'> */}
+                                    <div className="visualize-badge">
+                                        <img
+                                            src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fedaf963a9b4d0ee8446fe_dark-sub-icon.svg"
+                                            alt="icon"
+                                            className="badge-icon"
+                                        />
+                                        Visualize
+                                    </div>
+                                    {/* <div className='Workflow-container'> */}
+                                        <h1 className="workflow-title">
+                                            Build the perfect workflow for every project
+                                        </h1>
 
-                                <h1 className="workflow-title">
-                                    Build the perfect workflow for every project
-                                </h1>
+                                        <p className="workflow-description">
+                                            Track your entire project from start to finish with beautiful views that make project
+                                            planning a breeze. Manage your resources on a List, Box, Gantt, Board, or Calendar view
+                                            or create your workflow with any of clicks 10+ customizable views.
+                                        </p>
 
-                                <p className="workflow-description">
-                                    Track your entire project from start to finish with beautiful views that make project
-                                    planning a breeze. Manage your resources on a List, Box, Gantt, Board, or Calendar view
-                                    or create your workflow with any of clicks 10+ customizable views.
-                                </p>
-
-                                <div className="features-list">
-                                    {features.map((feature, index) => (
-                                        <div
-                                            key={index}
-                                            className="feature-item"
-                                            style={{ animationDelay: `${1.5 + index * 0.2}s` }}
-                                        >
-                                            <div className="feature-bullet">•</div>
-                                            <span style={{ letterSpacing: "1px", fontSize: "19px", fontWeight: "300" }}>{feature}</span>
+                                        <div className="features-list">
+                                            {features.map((feature, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="feature-item"
+                                                    style={{ animationDelay: `${1.5 + index * 0.2}s` }}
+                                                >
+                                                    {/* <div className='Feature-container'> */}
+                                                        <div className="feature-bullet">•</div>
+                                                        <span style={{ letterSpacing: "1px", fontSize: "19px", fontWeight: "300" }}>{feature}</span>
+                                                    {/* </div> */}
+                                                </div>
+                                            ))}
+                                            <button className="learn-more-btn">Learn more</button>
                                         </div>
-                                    ))}
-                                </div>
-
-                                <button className="learn-more-btn">Learn more</button>
+                                    {/* </div> */}
+                                {/* </div> */}
                             </div>
                         </Col>
                     </Row>
@@ -277,35 +308,65 @@ function Card() {
             </section>
 
 
-            <section>
+            <section className="how-it-works-section">
                 <div className="sectionpadding">
-                    <Row className="works-row">
-                        <Col lg={12} md={24} sm={24}>
-                            <div className="works-section-container">
-                                <img
-                                    src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fedaf963a9b4d0ee8446fe_dark-sub-icon.svg"
-                                    alt="icon"
-                                    className="badge-icon"
-                                />
-
-                                Core features
-                            </div>
-                            <div className='Works-contant-section'>
-                                <h1>How it works</h1>
-                                <p>For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do.</p>
-                            </div>
-                        </Col>
-                        <Col lg={12} md={24} sm={24}>
-                            <div>
-                                <div>
-                                    {worksData.map((item, index) => (
-                                        <div key={index} className="worksdata-contant">
-                                            <img src={item.img} alt="" />
-                                            <p>{item.name}</p>
-                                            <span>{item.description}</span>
-                                        </div>
-                                    ))}
+                    <Row>
+                        <Col lg={24} md={24} sm={24}>
+                            <div className={`works-header ${isHeaderVisible ? 'animate-in' : ''}`}>
+                                <div className="core-features-badge">
+                                    <img
+                                        src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fedaf963a9b4d0ee8446fe_dark-sub-icon.svg"
+                                        alt="icon"
+                                        className="badge-icon"
+                                    />
+                                    Core features
                                 </div>
+                                <div className="works-content-section">
+                                    <h1>How it works</h1>
+                                    <p>For who thoroughly her boy estimating conviction. Removed demands expense account in outward tedious do.</p>
+                                </div>
+                            </div>
+
+                            <div className="works-steps-container">
+                                {worksData.map((item, index) => (
+                                    <div key={index} className="step-wrapper">
+                                        <div
+                                            className={`works-step-card ${visibleSteps.includes(index) ? 'visible' : ''}`}
+                                            style={{
+                                                '--delay': `${index * 0.1}s`,
+                                                '--bg-gradient': item.bgGradient,
+                                                '--accent-color': item.color
+                                            }}
+                                        >
+                                            {/* Step Number */}
+                                            <div className="step-number">{item.step}</div>
+
+                                            {/* Icon Container */}
+                                            <div className="step-icon-container">
+                                                <div className="icon-background">
+                                                    <span className="step-icon">{item.img}</span>
+                                                </div>
+                                                <div className="icon-glow"></div>
+                                            </div>
+
+                                            {/* Content */}
+                                            <div className="step-content">
+                                                <h3 className="step-title">{item.name}</h3>
+                                                <p className="step-description">{item.description}</p>
+                                            </div>
+
+                                            {/* Connecting Line */}
+                                            {index < worksData.length - 1 && (
+                                                <div className="connecting-line">
+                                                    <div className="line-progress"></div>
+                                                </div>
+                                            )}
+
+                                            {/* Hover Overlay */}
+                                            <div className="hover-overlay"></div>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </Col>
                     </Row>
