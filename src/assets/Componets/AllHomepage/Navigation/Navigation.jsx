@@ -25,9 +25,9 @@ function Navigation() {
                     <FaLock className="lock-icon" />
                     <span>Sign Up</span>
                 </Link>
-                <Link to="/free-trial">
+                {/* <Link to="/free-trial">
                     <button className="trial-btn">Start free trial</button>
-                </Link>
+                </Link> */}
 
                 <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
                     {menuOpen ? <FaTimes /> : <FaBars />}
