@@ -78,3 +78,41 @@
 .team-section img {
     width: 30vh;
 }
+
+@media(max-width:900px) {
+    .rating-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-section-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .team-section {
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 30px;
+        width: 43vh;
+        transition: none;
+        background-color: #E9E5FF;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .team-section:hover {
+        transform: none;
+
+    }
+    .rating-section{
+        margin-top: 3vh;
+    }
+
+
+}
