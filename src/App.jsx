@@ -14,7 +14,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<AllHomepage />} />
-          <Route path='/about' element={<About />} />
+          <Route path="/about" element={<About />} />  {/* Must exist */}
         </Routes>
       </BrowserRouter>
     </>
