@@ -41,6 +41,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .team-section {
     padding: 35px;
     display: flex;
@@ -51,14 +52,15 @@
     border-radius: 30px;
     width: 43vh;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    background-color: #fff;
+    background-color: #E9E5FF;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
+
 .team-section:hover {
-    transform: translatex(10px) scale(1.04);
- 
+    transform: translatex(10px) scale(1.03);
+
 }
 
 .team-section h1 {
@@ -76,5 +78,3 @@
 .team-section img {
     width: 30vh;
 }
-
-

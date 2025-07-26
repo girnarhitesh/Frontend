@@ -50,13 +50,13 @@ function About() {
                     <Row>
                         <Col>
                             <div className="team-section-container">
-                                <div className="team-section" style={{ backgroundColor: "#E9E5FF" }}>
+                                <div className="team-section" >
                                     <img src="https://cdn.prod.website-files.com/64fee7e37afe6e69e2213de7/6509275b52fcccd6a4e5b55a_team-01.svg" alt="" />
                                     <h1>Louis Ferguson</h1>
                                     <p>Data Analyst</p>
                                 </div>
 
-                                <div className="team-section" style={{ backgroundColor: "#E9E5FF" }}>
+                                <div className="team-section">
                                     <img src="https://cdn.prod.website-files.com/64fee7e37afe6e69e2213de7/650bf3fbc295dc5083890176_team-02.svg" alt="" />
                                     <h1>
                                         Samuel Bishop
@@ -64,7 +64,7 @@ function About() {
                                     <p>Project Manager</p>
                                 </div>
 
-                                <div className="team-section" style={{ backgroundColor: "#E9E5FF" }}>
+                                <div className="team-section">
                                     <img src="https://cdn.prod.website-files.com/64fee7e37afe6e69e2213de7/650927c657f8668d5b2cdf2d_team-03.svg" alt="" />
                                     <h1>
                                         Dennis Barrett
