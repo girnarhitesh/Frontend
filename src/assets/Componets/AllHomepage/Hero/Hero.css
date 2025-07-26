@@ -21,6 +21,9 @@
      opacity: 1;
      transform: translateX(0);
  }
+ .Hero-section-img img{
+    width: 100%;
+ }
 
  .hero-title {
      font-size: 3rem;

@@ -20,3 +20,61 @@
     margin-top: 5vh;
     width: 100%;
 }
+
+.rating-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    text-align: center;
+}
+
+.rating-section p {
+    font-size: 19px;
+    letter-spacing: 0.7px;
+    font-weight: 500;
+    color: rgb(157, 153, 153);
+}
+
+.team-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.team-section {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 43vh;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.team-section:hover {
+    transform: translatex(10px) scale(1.04);
+ 
+}
+
+.team-section h1 {
+    font-size: 2rem;
+    margin-top: 2vh;
+    letter-spacing: 0.4px;
+}
+
+.team-section p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.team-section img {
+    width: 30vh;
+}
+
+
