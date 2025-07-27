@@ -1354,6 +1354,9 @@
     .works-content-section h1{
         font-size: 2.5rem;
     }
+    .works-content-section p{
+        letter-spacing: 1px;
+    }
 
 
 

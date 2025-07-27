@@ -113,6 +113,7 @@
     opacity: 1;
     pointer-events: auto;
     gap: 5px;
+    margin-top: -2vh;
   }
 
   /* .nav-right {
