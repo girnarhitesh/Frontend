@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
- import AllHomepage from './assets/Componets/AllHomepage/AllHomepage';
- import About from './assets/Componets/About/About';
- import Navigation from './assets/Componets/AllHomepage/Navigation/Navigation'
+import AllHomepage from './assets/Componets/AllHomepage/AllHomepage';
+import Navigation from './assets/Componets/AllHomepage/Navigation/Navigation';
+import About from './assets/Componets/About/About';
+import Services from './assets/Componets/Services/Services';
 
 function App() {
   return (
