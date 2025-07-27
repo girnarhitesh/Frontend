@@ -14,7 +14,6 @@ function App() {
         <Route path="/" element={<AllHomepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   );
