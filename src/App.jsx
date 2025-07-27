@@ -7,20 +7,17 @@ import About from './assets/Componets/About/About';
 import Services from './assets/Componets/Services/Services';
 
 function App() {
-
-
   return (
-    <>
-      <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route path="/" element={<AllHomepage />} />
-          <Route path="/about" element={<About />} />  {/* Must exist */}
-          <Route path='/services' element={<Services/>}/>
-        </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <BrowserRouter>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<AllHomepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="*" element={<h1>404 - Page Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
