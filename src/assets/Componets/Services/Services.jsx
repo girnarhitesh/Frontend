@@ -182,7 +182,7 @@ function Services() {
                     <Row>
                         <Col lg={24} md={24} sm={24} className='ServicesData-Col' style={{ background: "black", padding: "35px", borderRadius: "35px" }}>
                             <div  >
-                                <div className="core-features-badge">
+                                <div className="core-features-badge" style={{display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto",width:"20vh"}}>
                                     <img
                                         src="https://cdn.prod.website-files.com/64f6bfb294370bcdf0b9915d/64fedaf963a9b4d0ee8446fe_dark-sub-icon.svg"
                                         alt="icon"
@@ -193,7 +193,7 @@ function Services() {
                             </div>
                             <div className="servicesdata-section-container" >
                                 <div className="servicesData-section">
-                                    <h1 style={{ color: "white" }}>Elevate your experience with us</h1>
+                                    <h1 style={{ color: "white",textAlign:"center",marginTop:"2vh" }}>Elevate your experience with us</h1>
                                 </div>
                                 <div className="ServicesData-section-containers" >
                                     {ServicesDataitem.map((item, index) => (
