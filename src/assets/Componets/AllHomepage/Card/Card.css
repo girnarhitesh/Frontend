@@ -303,7 +303,7 @@
 
 @media(max-width:900px) {
     .card-heading h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         /* font-weight: 600; */
         /* letter-spacing: 0.5px; */
     }
@@ -1349,7 +1349,7 @@
      display: none;
     }
     .workflow-title{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .works-content-section h1{
         font-size: 2.5rem;

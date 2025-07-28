@@ -23,3 +23,9 @@ h6 {
     line-height: 1.2;
     letter-spacing: -0.02em;
 }
+
+@media(max-width:900px){
+    .sectionpadding {
+        padding: 2rem;
+    }
+}
