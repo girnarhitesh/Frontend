@@ -1,7 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect,useState } from 'react';
 import { Row, Col } from 'antd';
+import 'aos/dist/aos.css'; // AOS CSS
+import Aos from 'aos';
 import "./Services.css";
-import { TbBackground } from 'react-icons/tb';
+
+
 
 function Services() {
     const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -76,6 +79,10 @@ function Services() {
             description: "Boost your online visibility with our comprehensive search optimization.",
         },
     ];
+
+    useEffect(() => {
+  Aos.init({ duration: 1000 }); // animation duration in ms
+}, []);
     return (
         <>
             <section>
@@ -173,7 +180,7 @@ function Services() {
             <section>
                 <div className="sectionpadding">
                     <Row>
-                        <Col lg={24} md={24} sm={24} className='ServicesData-Col' style={{background:"black",padding:"35px",borderRadius:"35px"}}>
+                        <Col lg={24} md={24} sm={24} className='ServicesData-Col' style={{ background: "black", padding: "35px", borderRadius: "35px" }}>
                             <div  >
                                 <div className="core-features-badge">
                                     <img
@@ -186,11 +193,12 @@ function Services() {
                             </div>
                             <div className="servicesdata-section-container" >
                                 <div className="servicesData-section">
-                                    <h1 style={{color:"white"}}>Elevate your experience with us</h1>
+                                    <h1 style={{ color: "white" }}>Elevate your experience with us</h1>
                                 </div>
                                 <div className="ServicesData-section-containers" >
                                     {ServicesDataitem.map((item, index) => (
-                                        <div key={index} className="ServicesData-img-section" style={{ backgroundColor: item.color }}>
+                                        <div key={index} className="ServicesData-img-section" style={{ backgroundColor: item.color }} data-aos="fade-up"
+                                            data-aos-duration="2000">
                                             <img src={item.img} alt={item.name} />
                                             <p>{item.name}</p>
                                             <span>{item.description}</span>
