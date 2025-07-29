@@ -17,7 +17,7 @@ export default function App() {
   );
 }
 
-function SignInPage() {
+function Singin() {
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -266,3 +266,4 @@ function SignInPage() {
     </div>
   );
 }
+
