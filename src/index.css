@@ -24,8 +24,8 @@ h6 {
     letter-spacing: -0.02em;
 }
 
-@media(max-width:900px){
+@media(max-width:900px) {
     .sectionpadding {
-        padding: 2rem;
+        padding: 1.5rem !important;
     }
 }

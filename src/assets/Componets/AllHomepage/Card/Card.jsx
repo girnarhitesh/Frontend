@@ -122,7 +122,7 @@ function Card() {
         <>
             <div className="cards-main-container">
                 <div className="sectionpadding">
-                    <Row gutter={[40, 40]}>
+                    <Row>
                         <Col lg={24} md={24} sm={24}>
                             <div className={`card-section-container ${isHeaderVisible ? 'animate-in' : ''}`}>
                                 <div className="card-section-header">

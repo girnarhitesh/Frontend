@@ -9,7 +9,7 @@ function Navigation() {
     return (
         <nav className="navigation">
             <div className="nav-left">
-                <FaBolt className="logo-icon" />
+                <FaBolt className="logo-icon-navigation" />
                 <Link to="/" className="logo-text">Cloudvista</Link>
             </div>
 
@@ -21,7 +21,7 @@ function Navigation() {
             </div>
 
             <div className="nav-right">
-                <Link to="/signup" className="signup">
+                <Link to="/singin" className="signup">
                     <FaLock className="lock-icon" />
                     <span>Sign Up</span>
                 </Link>
