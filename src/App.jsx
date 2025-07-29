@@ -5,7 +5,8 @@ import AllHomepage from './assets/Componets/AllHomepage/AllHomepage';
 import Navigation from './assets/Componets/AllHomepage/Navigation/Navigation';
 import About from './assets/Componets/About/About';
 import Services from './assets/Componets/Services/Services';
-import SignInPage from './assets/Singin/Singin';
+import SignInPage from './assets/Sing in/Singin';
+
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Route path="/" element={<AllHomepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path='/singin' element={<SignInPage/>}/>
+        <Route path='/singin' element={<SignInPage />} />
       </Routes>
     </BrowserRouter>
   );
