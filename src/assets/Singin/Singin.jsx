@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
-import './singin.css'
+import './Singin.css';
 
 // Main App component to wrap SignInPage with GoogleOAuthProvider
 export default function App() {
@@ -12,8 +12,6 @@ export default function App() {
 
   return (
     <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-
-  
       <SignInPage />
     </GoogleOAuthProvider>
   );
