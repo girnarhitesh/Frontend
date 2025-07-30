@@ -164,7 +164,7 @@ function Signin() {
         <div className="signin-card">
           {/* Header Section */}
           <div className="signin-header">
-            <h1 className="signin-title">Sign In</h1>
+            <h1 className="signin-title">Sign up</h1>
             <p className="signin-subtitle">Welcome back! Please enter your details.</p>
           </div>
 
