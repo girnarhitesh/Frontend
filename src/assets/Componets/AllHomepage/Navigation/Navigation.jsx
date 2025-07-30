@@ -18,12 +18,14 @@ function Navigation() {
                 <li><Link to="/about" className="nav-link" onClick={() => setMenuOpen(false)}>About</Link></li>
                 <li><Link to="/services" className="nav-link" onClick={() => setMenuOpen(false)}>Services</Link></li>
                 <li><Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link></li>
+
             </div>
 
             <div className="nav-right">
                 <Link to="/singin" className="signup">
                     <FaLock className="lock-icon" />
-                    <span>Sign Up</span>
+                    <span><Link to="/singin" className='nav-link' onClick={() => setMenuOpen(false)}>Sign Up</Link></span>
+
                 </Link>
                 {/* <Link to="/free-trial">
                     <button className="trial-btn">Start free trial</button>
