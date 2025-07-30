@@ -5,7 +5,7 @@ import AllHomepage from './assets/Componets/AllHomepage/AllHomepage';
 import Navigation from './assets/Componets/AllHomepage/Navigation/Navigation';
 import About from './assets/Componets/About/About';
 import Services from './assets/Componets/Services/Services';
-import Singin from "./assets/Componets/Singin/Singin"
+import Singin from './assets/Componets/Singin/Singin'
 
 
 function App() {

@@ -1,21 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react';
-import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
+import {  GoogleLogin } from '@react-oauth/google';
 import  "./Singin.css";
 
-// Main App component to wrap SignInPage with GoogleOAuthProvider
-export default function App() {
-  // In a real application, replace 'YOUR_GOOGLE_CLIENT_ID' with your actual Google Client ID.
-  // This ID is obtained from the Google Cloud Console for your project.
-  // For development purposes in a sandboxed environment, a placeholder is used.
-  const GOOGLE_CLIENT_ID = 'YOUR_GOOGLE_CLIENT_ID'; // Replace with your actual client ID
-
-  return (
-    <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-      <SignInPage />
-    </GoogleOAuthProvider>
-  );
-}
 
 function Singin() {
   const [formData, setFormData] = useState({
@@ -242,16 +229,13 @@ function Singin() {
           {/* Social Login Buttons */}
           <div className="social-buttons">
             {/* Google Login Button */}
-            <div className="w-full flex items-center justify-center">
+            {/* <div className="w-full flex items-center justify-center">
               <GoogleLogin
                 onSuccess={handleGoogleSuccess}
                 onError={handleGoogleError}
-                // The GoogleLogin component renders its own button, which might not
-                // perfectly match the custom styling of other social buttons.
-                // If full custom styling is needed, you'd use 'render' prop
-                // and a custom button, then call 'prompt' on click.
+                
               />
-            </div>
+            </div> */}
 
             {/* Facebook Login Button (Placeholder for now) */}
             <button className="social-button">
@@ -267,3 +251,4 @@ function Singin() {
   );
 }
 
+export default Singin
