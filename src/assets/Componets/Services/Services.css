@@ -101,4 +101,15 @@
     .services-section span {
         font-size: 1.2rem;
     }
+    .Services-page-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .ServicesData-section-containers{
+          display: flex;
+        flex-direction: column;
+    }
+    .servicesData-section h1{
+        font-size:2rem;
+    }
 }
