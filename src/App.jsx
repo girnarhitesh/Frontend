@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<AllHomepage />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-<Route path='/singin' element={<Singin/>}/>
+        <Route path='/singin' element={<Singin />} />
       </Routes>
     </BrowserRouter>
   );
