@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Row, Col } from 'antd';
 import "./Card.css"
+ 
 
 function Card() {
     const [visibleCards, setVisibleCards] = useState([]);
@@ -373,6 +374,7 @@ function Card() {
                     </Row>
                 </div>
             </section>
+ 
         </>
     );
 }
