@@ -266,8 +266,8 @@ function Signin() {
             {/* Authentication Message */}
             {authMessage && (
               <div className={`auth-message ${authMessage.includes('Welcome') || authMessage.includes('successful')
-                  ? 'success'
-                  : 'error'
+                ? 'success'
+                : 'error'
                 }`}>
                 {authMessage}
               </div>
