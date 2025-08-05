@@ -19,7 +19,7 @@ function Navigation() {
                 <li><Link to="/services" className="nav-link" onClick={() => setMenuOpen(false)}>Services</Link></li>
                 <li><Link to="/contact" className="nav-link" onClick={() => setMenuOpen(false)}>Contact</Link></li>
 
-            </div>
+            </div> 
 
             <div className="nav-right">
                 <Link to="/singin" className="signup">
